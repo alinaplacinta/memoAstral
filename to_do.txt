@@ -1,0 +1,11 @@
+✓ responsive 
+✓ 16 celule
+✓ efect flip pe celule 
+✓ buton in loc de div
+✓ scor board + timer
+✓ header + hamburger meniu cu lista de jocuri
+✓ aniamtii mijto pe centru 
+
+
+
+- FLEX (main container)
