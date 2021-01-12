@@ -1,84 +1,5 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+ {
   margin: 0;
   padding: 0;
   border: 0;
@@ -167,23 +88,36 @@ body {
 }
 
 .main-container {
-  overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 35px;
+}
+
+.cards-container {
+  width: 370px;
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; */
 }
 
 .buttons {
-  width: 100%;
+  width: 370px;
   overflow: hidden;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-container {
   width: 49%;
   margin-top: 8px;
   display: inline-block;
+  text-align: center;
 }
 
 button.button {
@@ -402,6 +336,7 @@ span.h-line {
 .grid {
   width: 1150px;
   margin: 0px auto;
+  height: 100vh;
 }
 
 .header-count-container {
@@ -476,9 +411,7 @@ span.h-line {
 }
 
 @media screen and (max-width: 1400px) {
-  .main-container {
-    top: 59%;
-  }
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -486,9 +419,7 @@ span.h-line {
     width: 90%;
   }
 
-  .main-container {
-    top: 57%;
-  }
+  
 }
 
 @media screen and (max-width: 800px) {
@@ -500,10 +431,7 @@ span.h-line {
     width: 90%;
   }
 
-  .main-container {
-    top: 55%;
-    width: 52.1%;
-}
+ 
   .sun-container {
     margin-top: 10px;
   }
@@ -514,10 +442,7 @@ span.h-line {
     width: 90%;
   }
 
-  .main-container {
-    top: 51%;
-    width: 64.4%;
-}
+ 
   .sun-container {
     margin-top: 10px;
   }
@@ -531,13 +456,10 @@ span.h-line {
 
   
   .grid {
-    width: 62%;
-    width: 60%;
+    width: 90%;
   }
 
-  .main-container {
-    top: 47%;
-  }
+ 
 
 
   .sun-container {
@@ -577,12 +499,19 @@ span.h-line {
   .dropdown {
     width: 83px;
   }
+
+  .cards-container {
+    width: 316px;
+}
+
+.buttons {
+  width: 316px;
+}
+
 }
 
 @media screen and (max-width: 400px) {
-  .main-container {
-    width: 60%;
-  }
+  
 
   button.button {
     font-size: 12px;
@@ -614,4 +543,14 @@ span.h-line {
   .dropdown:hover .h-line-bottom {
     transform: translateY(-15px) rotate(-35deg);
   }
+
+  .cards-container {
+    width: 266px;
 }
+
+.buttons {
+  width: 266px;
+}
+}
+
+
